@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // strings
+
+    // charAt()
+    var str = "ABHISHEK";
+    var res = str.charAt(0);
+
+    //concat()
+    var str1 = "Abhishek ";
+    var str2 = "Mohan";
+    var res = str1.concat(str2);
+
+    // Indexof()
+    var str = "Hello world";
+    var n = str.indexOf("l");
+
+    // repeat()
+    var str = "Hello world";
+    var n = str.indexOf("l");
+
+    // replace()
+    var str = "Abhishek Mohan";
+    var res = str.replace("Abhishek", "Abhi");
+
+    // search()
+    var str = "Abhishek Mohan A";
+    var n = str.search("Mohan");
+
+    // slice()
+    var str = "Hello world!";
+    var res = str.slice(0, 5);
+
+    // substring()
+    var str = "Hello world!";
+    var res = str.substring(1, 3);
+
+    // toUpperCase()
+    var str = "abhishek mohan";
+    var res = str.toUpperCase();
+
+    // tolowerCase()
+    var str = "ABHISHEK MOHAN";
+    var res = str.toLowerCase();
+
+    // trim()
+    var str = "       Hello World!        ";
+    alert(str.trim());
+
+    // valueOf()
+    var str = "Hello World!";
+    var res = str.valueOf();
+
+    // ----------------------------------------------------
+    // arrays
+
+    // pop()
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.pop(); 
+
+    // push()
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.push("Kiwi"); 
+
+    // shift()
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.shift();
+
+    // unshift()
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.unshift("Lemon");
+
+    // length
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits[fruits.length] = "Kiwi";
+
+    // delete
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    delete fruits[0]; 
+
+    // splice()
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(2, 0, "Lemon", "Kiwi");
+
+    //concat()
+    var arr1 = ["Cecilie", "Lone"];
+    var arr2 = ["Emil", "Tobias", "Linus"];
+    var arr3 = ["Robin", "Morgan"];
+    var myChildren = arr1.concat(arr2, arr3); 
+    
+    // slice()
+    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    var citrus = fruits.slice(1);
+</script> 
+</body>
+</html>
