@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function displayOs(){
+           let entry = window.prompt("Enter your OS and version separated by space","enter here");
+           let split = entry.split(' ');
+           console.log("The OS name is " + split[0] + " and the version is " + split[1] + ".");
+       }
+       displayOs();
+    </script>
+</body>
+</html>
