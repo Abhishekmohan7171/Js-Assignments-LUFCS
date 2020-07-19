@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +window.prompt("Enter First Number","0");
+        let b = +window.prompt("Enter Second Number","0");
+        let c = window.prompt("Enter + for addition , - for subtraction, * for multiplication, / for division, % for remainder,r for squareroot");
+        if(c == "+"){
+            console.log("The result is:",a+b);
+        }
+        else if(c == "-"){
+            console.log("The result is:",a-b);
+        }
+        else if(c == "*"){
+            console.log("The result is:",a*b);
+        }
+        else if(c == "/"){
+            console.log("The result is:",a/b);
+        }
+        else if(c == "%"){
+            console.log("The result is:",a%b);
+        }
+        else if(c == "r"){
+            console.log("The result is:",Math.sqrt(a));
+        }
+    </script>
+</body>
+</html>
