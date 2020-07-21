@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User{
+           constructor(name,age,email,){
+           this.name = name;
+           this.age = age;
+           this.email = email;
+           this.uCoins = 0;
+           this.courses = [];
+           }
+
+           login(){
+               console.log(`${this.name} has logged in.`);
+               return this;
+           }
+
+           logout(){
+               console.log(`${this.name} has logged out.`);
+               return this;
+           }
+
+        }
+
+         class Moderator extends User{
+             constructor(name,age,email){
+                 super(name,age,email);
+                 
+                }
+
+            addCoins(){
+                this.uCoins++;
+                console.log(`${this.name} has ${this.uCoins} coins`);
+                return this;
+             } 
+            removeCoins(){
+                this.uCoins--;
+                console.log(`${this.name} has ${this.uCoins} coins`);
+                return this;
+            }
+        }
+
+        class Admin extends Moderator{
+            addCourse(user,course){
+                user.courses.push(course);
+                console.log(user);
+            }
+            deleteCourse(user,course){
+                user.courses.pop(course);
+                console.log(user);
+            }
+        }
+
+        let user1 = new User('Abhishek',20,'abhishek@gmail.com')
+        let user2 = new User('Mohan',22,'mohan@gmail.com')
+        let mod = new Moderator('Nikhil',30,'nikhil@gmail.com','Moderator');
+        let admin = new Admin('Rayan',25,'rayan@gmail.com');
+        let users = [user1,user2,mod,admin];
+        
+        // user1.login();
+        // user1.logout();
+        // mod.addCoins();
+        // mod.addCoins();
+        // mod.removeCoins();
+        // admin.addCourse(user1,"Js");
+        // admin.deleteCourse(user1,"Js")
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let b = +window.prompt("Enter till where you want to find:")
+        let arr = [];
+        var i;
+        for (let i = 1; i <= b; i++) {
+                arr.push(i);
+            }
+        
+         let oddCubes = arr.filter(el=>el%2!=0).map(el=>el**3);
+         console.log(oddCubes);
+    </script>
+</body>
+</html>
